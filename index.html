@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaForge — Build the Future. One Idea at a Time.</title>
+  <meta name="description" content="NovaForge is a technology studio that designs, builds and ships web products, cloud infrastructure and automation for ambitious teams.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Skip link for keyboard/screen-reader users -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ============ HEADER / NAVIGATION ============ -->
+  <header class="site-header" id="site-header">
+    <nav class="navbar" aria-label="Primary">
+      <a href="#home" class="brand">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="28" height="28">
+            <path d="M16 2 L28 9 V23 L16 30 L4 23 V9 Z" fill="none" stroke="url(#brandGrad)" stroke-width="2"/>
+            <path d="M16 9 L22 12.5 V19.5 L16 23 L10 19.5 V12.5 Z" fill="url(#brandGrad)"/>
+            <defs>
+              <linearGradient id="brandGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#FF8A4C"/>
+                <stop offset="100%" stop-color="#4FA3FF"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </span>
+        <span class="brand-name">NovaForge</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle navigation menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link active" data-nav>Home</a></li>
+        <li><a href="#about" class="nav-link" data-nav>About</a></li>
+        <li><a href="#services" class="nav-link" data-nav>Services</a></li>
+        <li><a href="#projects" class="nav-link" data-nav>Projects</a></li>
+        <li><a href="#contact" class="nav-link" data-nav>Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="hero-kicker">Product engineering &amp; design studio</p>
+          <h1 class="hero-headline">Build the Future.<br>One Idea at a Time.</h1>
+          <p class="hero-desc">
+            NovaForge partners with founders and product teams to design, build and scale
+            software that holds up under real usage — from first prototype to
+            production infrastructure.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Get Started</a>
+            <a href="#projects" class="btn btn-secondary">View Projects</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <svg class="forge-graphic" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#FF8A4C" stop-opacity="0.55"/>
+                <stop offset="100%" stop-color="#FF8A4C" stop-opacity="0"/>
+              </radialGradient>
+              <linearGradient id="ringGrad1" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#FF8A4C"/>
+                <stop offset="100%" stop-color="#FFC24C"/>
+              </linearGradient>
+              <linearGradient id="ringGrad2" x1="0" y1="1" x2="1" y2="0">
+                <stop offset="0%" stop-color="#4FA3FF"/>
+                <stop offset="100%" stop-color="#7B6CFF"/>
+              </linearGradient>
+            </defs>
+            <circle cx="240" cy="240" r="150" fill="url(#glow)"/>
+            <g class="ring ring-1">
+              <circle cx="240" cy="240" r="170" fill="none" stroke="url(#ringGrad1)" stroke-width="1.5" stroke-dasharray="4 10" opacity="0.6"/>
+            </g>
+            <g class="ring ring-2">
+              <circle cx="240" cy="240" r="130" fill="none" stroke="url(#ringGrad2)" stroke-width="2" stroke-dasharray="1 14" stroke-linecap="round" opacity="0.85"/>
+            </g>
+            <g class="ring ring-3">
+              <path d="M240 130 A110 110 0 0 1 350 240" fill="none" stroke="url(#ringGrad1)" stroke-width="3" stroke-linecap="round"/>
+              <path d="M240 350 A110 110 0 0 1 130 240" fill="none" stroke="url(#ringGrad2)" stroke-width="3" stroke-linecap="round"/>
+            </g>
+            <polygon points="240,175 292,207 292,271 240,303 188,271 188,207"
+                     fill="none" stroke="#EAF0FF" stroke-width="1.5" opacity="0.5"/>
+            <circle cx="240" cy="240" r="34" fill="#0B0E14" stroke="url(#ringGrad1)" stroke-width="2"/>
+            <circle cx="240" cy="240" r="10" fill="url(#ringGrad1)"/>
+            <circle class="node node-a" cx="292" cy="207" r="5" fill="#4FA3FF"/>
+            <circle class="node node-b" cx="188" cy="271" r="5" fill="#FF8A4C"/>
+            <circle class="node node-c" cx="292" cy="271" r="4" fill="#FFC24C"/>
+          </svg>
+        </div>
+      </div>
+      <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about" id="about">
+      <div class="section-inner about-grid">
+        <div class="about-text reveal">
+          <h2 class="section-title">A studio built for the hard middle part</h2>
+          <p>
+            Anyone can sketch an idea. Few teams can carry it through the hard middle part —
+            the architecture decisions, the edge cases, the six months after launch where
+            most products actually get built. That's where NovaForge lives.
+          </p>
+          <p>
+            Founded by engineers and designers who were tired of throwaway prototypes,
+            we work as an embedded extension of your team: shipping production code,
+            not slide decks. Every engagement pairs a senior engineer with a product
+            designer from day one, so decisions about interface and infrastructure
+            get made together instead of handed off.
+          </p>
+          <div class="about-points">
+            <div class="about-point">
+              <h3>Our mission</h3>
+              <p>Help ambitious teams turn early conviction into software that scales without rewrites.</p>
+            </div>
+            <div class="about-point">
+              <h3>How we work</h3>
+              <p>Small senior teams, weekly demos, and code you own outright from the first commit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-card reveal">
+          <ul class="about-list">
+            <li><span>Founded</span><strong>2019</strong></li>
+            <li><span>Team size</span><strong>24 specialists</strong></li>
+            <li><span>Based in</span><strong>Distributed / remote-first</strong></li>
+            <li><span>Focus</span><strong>Web, cloud &amp; automation</strong></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="services" id="services">
+      <div class="section-inner">
+        <div class="section-heading reveal">
+          <h2 class="section-title">What we do</h2>
+          <p class="section-subtitle">Four disciplines, one accountable team — no hand-offs between agencies.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="4" y="8" width="32" height="22" rx="3"/>
+                <path d="M4 15h32"/>
+                <path d="M14 25l-4 4 4 4" transform="translate(0,-6)"/>
+                <path d="M14 33l6-14"/>
+              </svg>
+            </div>
+            <h3>Web Development</h3>
+            <p>Fast, accessible web applications built on modern, maintainable foundations — from marketing sites to complex internal tools.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="6" y="4" width="28" height="32" rx="4"/>
+                <circle cx="20" cy="14" r="4"/>
+                <path d="M12 30c1.5-5 6-7 8-7s6.5 2 8 7"/>
+              </svg>
+            </div>
+            <h3>UI/UX Design</h3>
+            <p>Research-driven interfaces that feel obvious in hindsight — wireframes, prototypes and design systems your team can extend.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 28a7 7 0 01-1-13.9A9 9 0 0128.8 12 6.5 6.5 0 0128 25"/>
+                <path d="M12 28h16"/>
+              </svg>
+            </div>
+            <h3>Cloud Solutions</h3>
+            <p>Cloud architecture, migrations and infrastructure-as-code that scales predictably and keeps costs visible.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="20" cy="20" r="5"/>
+                <path d="M20 4v5M20 31v5M36 20h-5M9 20H4M30.6 9.4l-3.5 3.5M12.9 27.1l-3.5 3.5M30.6 30.6l-3.5-3.5M12.9 12.9L9.4 9.4"/>
+              </svg>
+            </div>
+            <h3>Automation</h3>
+            <p>Workflow automation, CI/CD pipelines and internal tooling that remove the manual work slowing your team down.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="projects" id="projects">
+      <div class="section-inner">
+        <div class="section-heading reveal">
+          <h2 class="section-title">Selected work</h2>
+          <p class="section-subtitle">A few products we've taken from first sketch to production.</p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-thumb project-thumb-1" aria-hidden="true">
+              <svg viewBox="0 0 300 180" preserveAspectRatio="xMidYMid slice">
+                <rect width="300" height="180" fill="#101623"/>
+                <circle cx="60" cy="40" r="70" fill="#FF8A4C" opacity="0.18"/>
+                <circle cx="250" cy="150" r="90" fill="#4FA3FF" opacity="0.15"/>
+                <path d="M20 130 Q100 70 150 110 T290 90" stroke="#FFC24C" stroke-width="2" fill="none" opacity="0.6"/>
+                <rect x="40" y="60" width="70" height="46" rx="6" fill="none" stroke="#EAF0FF" stroke-width="1.5" opacity="0.5"/>
+              </svg>
+            </div>
+            <div class="project-body">
+              <h3>Meridian Health</h3>
+              <p>A patient portal redesign that cut appointment scheduling time by 40% for a 12-clinic healthcare network.</p>
+              <ul class="tech-tags">
+                <li>React</li><li>Node.js</li><li>AWS</li><li>PostgreSQL</li>
+              </ul>
+              <a href="#" class="btn btn-ghost">View Project</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-thumb project-thumb-2" aria-hidden="true">
+              <svg viewBox="0 0 300 180" preserveAspectRatio="xMidYMid slice">
+                <rect width="300" height="180" fill="#101623"/>
+                <rect x="0" y="0" width="300" height="180" fill="url(#g2)"/>
+                <defs>
+                  <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#4FA3FF" stop-opacity="0.16"/>
+                    <stop offset="100%" stop-color="#7B6CFF" stop-opacity="0.12"/>
+                  </linearGradient>
+                </defs>
+                <polyline points="20,140 70,100 120,120 170,60 220,90 280,40" stroke="#4FA3FF" stroke-width="2.5" fill="none"/>
+                <circle cx="170" cy="60" r="4" fill="#FFC24C"/>
+              </svg>
+            </div>
+            <div class="project-body">
+              <h3>Fintrack</h3>
+              <p>A personal finance dashboard with real-time budgeting insights, now used by over 80,000 households.</p>
+              <ul class="tech-tags">
+                <li>Vue</li><li>Python</li><li>PostgreSQL</li><li>Docker</li>
+              </ul>
+              <a href="#" class="btn btn-ghost">View Project</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-thumb project-thumb-3" aria-hidden="true">
+              <svg viewBox="0 0 300 180" preserveAspectRatio="xMidYMid slice">
+                <rect width="300" height="180" fill="#101623"/>
+                <g opacity="0.5" stroke="#FF8A4C" stroke-width="1">
+                  <line x1="0" y1="30" x2="300" y2="30"/>
+                  <line x1="0" y1="90" x2="300" y2="90"/>
+                  <line x1="0" y1="150" x2="300" y2="150"/>
+                </g>
+                <rect x="60" y="55" width="20" height="70" rx="3" fill="#FF8A4C" opacity="0.7"/>
+                <rect x="140" y="35" width="20" height="90" rx="3" fill="#FFC24C" opacity="0.7"/>
+                <rect x="220" y="70" width="20" height="55" rx="3" fill="#4FA3FF" opacity="0.7"/>
+              </svg>
+            </div>
+            <div class="project-body">
+              <h3>Orbit Logistics</h3>
+              <p>A fleet management platform coordinating 1,200+ vehicles with live routing and automated dispatch.</p>
+              <ul class="tech-tags">
+                <li>TypeScript</li><li>GraphQL</li><li>Kubernetes</li><li>Redis</li>
+              </ul>
+              <a href="#" class="btn btn-ghost">View Project</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STATISTICS ============ -->
+    <section class="stats" id="stats">
+      <div class="section-inner stats-grid">
+        <div class="stat-item reveal">
+          <span class="stat-number" data-target="50" data-suffix="+">0</span>
+          <span class="stat-label">Projects shipped</span>
+        </div>
+        <div class="stat-item reveal">
+          <span class="stat-number" data-target="30" data-suffix="+">0</span>
+          <span class="stat-label">Clients served</span>
+        </div>
+        <div class="stat-item reveal">
+          <span class="stat-number" data-target="5" data-suffix="+">0</span>
+          <span class="stat-label">Years experience</span>
+        </div>
+        <div class="stat-item reveal">
+          <span class="stat-number" data-target="99" data-suffix="%">0</span>
+          <span class="stat-label">Client satisfaction</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="testimonials" id="testimonials">
+      <div class="section-inner">
+        <div class="section-heading reveal">
+          <h2 class="section-title">What clients say</h2>
+        </div>
+        <div class="testimonials-grid">
+          <figure class="testimonial-card reveal">
+            <blockquote>
+              "NovaForge didn't just build what we asked for — they questioned our assumptions
+              early enough to save us months of rework. The handoff was seamless."
+            </blockquote>
+            <figcaption>
+              <span class="avatar" aria-hidden="true">DP</span>
+              <span class="testimonial-meta">
+                <strong>Dana Petrova</strong>
+                <span>VP Product, Meridian Health</span>
+              </span>
+            </figcaption>
+          </figure>
+
+          <figure class="testimonial-card reveal">
+            <blockquote>
+              "We came in expecting a vendor and got a genuine engineering partner.
+              Our infrastructure costs dropped 30% within the first quarter."
+            </blockquote>
+            <figcaption>
+              <span class="avatar" aria-hidden="true">MO</span>
+              <span class="testimonial-meta">
+                <strong>Marcus Oyelaran</strong>
+                <span>CTO, Orbit Logistics</span>
+              </span>
+            </figcaption>
+          </figure>
+
+          <figure class="testimonial-card reveal">
+            <blockquote>
+              "The design system they built us is still the backbone of our product
+              two years later. Rare to get work that holds up that long."
+            </blockquote>
+            <figcaption>
+              <span class="avatar" aria-hidden="true">RK</span>
+              <span class="testimonial-meta">
+                <strong>Renee Kaczmarek</strong>
+                <span>Founder, Fintrack</span>
+              </span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact" id="contact">
+      <div class="section-inner contact-grid">
+        <div class="contact-intro reveal">
+          <h2 class="section-title">Let's build something</h2>
+          <p>
+            Tell us a bit about what you're working on. We reply to every serious
+            inquiry within one business day.
+          </p>
+          <ul class="contact-details">
+            <li>hello@novaforge.io</li>
+            <li>+1 (415) 555‑0148</li>
+            <li>Remote-first, serving clients worldwide</li>
+          </ul>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+            <span class="field-error" id="nameError" role="alert"></span>
+          </div>
+
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+            <span class="field-error" id="emailError" role="alert"></span>
+          </div>
+
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <span class="field-error" id="messageError" role="alert"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="section-inner footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="brand">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="24" height="24">
+              <path d="M16 2 L28 9 V23 L16 30 L4 23 V9 Z" fill="none" stroke="url(#brandGrad2)" stroke-width="2"/>
+              <path d="M16 9 L22 12.5 V19.5 L16 23 L10 19.5 V12.5 Z" fill="url(#brandGrad2)"/>
+              <defs>
+                <linearGradient id="brandGrad2" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#FF8A4C"/>
+                  <stop offset="100%" stop-color="#4FA3FF"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </span>
+          <span class="brand-name">NovaForge</span>
+        </a>
+        <p>A product engineering &amp; design studio for teams building what's next.</p>
+      </div>
+
+      <nav class="footer-links" aria-label="Footer">
+        <h3>Quick links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-social">
+        <h3>Follow along</h3>
+        <div class="social-icons">
+          <a href="#" aria-label="NovaForge on X (Twitter)">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M18.9 2H22l-7.6 8.7L23.3 22h-6.9l-5.4-6.6L4.8 22H1.7l8.1-9.3L1 2h7.1l4.9 6.1L18.9 2zm-1.2 18h1.9L7.4 3.9H5.3L17.7 20z"/></svg>
+          </a>
+          <a href="#" aria-label="NovaForge on LinkedIn">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3V9zm7 0h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.55 4.78 5.86V21h-4v-5.6c0-1.34-.02-3.07-1.9-3.07-1.9 0-2.2 1.44-2.2 2.97V21h-4V9z"/></svg>
+          </a>
+          <a href="#" aria-label="NovaForge on GitHub">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 00-3.16 19.5c.5.1.68-.22.68-.48v-1.7c-2.78.6-3.37-1.2-3.37-1.2-.46-1.15-1.11-1.46-1.11-1.46-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.6 9.6 0 015 0c1.9-1.3 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0012 2z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> NovaForge. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ============ BACK TO TOP ============ -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 19V5M5 12l7-7 7 7"/>
+    </svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
